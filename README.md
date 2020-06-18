@@ -1,2 +1,1 @@
-# X-Camp
-# dantheking-crypto.github.io
+# This is my Github Pages project repo.
