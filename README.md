@@ -1,2 +1,2 @@
 # This is my Github Pages project repo.
-{% include_relative sorting.md %}
+[Sorting](https://dantheking-crypto.github.io/sorting)
