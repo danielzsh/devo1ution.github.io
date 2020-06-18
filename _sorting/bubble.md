@@ -7,11 +7,11 @@ Start from the first element in the array. If it is larger than the element righ
 #### Optimization
 If no swaps are made, you can deduce that the array is already sorted, and break from the loop.
 ### Time Complexity
-The first time, the code needs to make n - 1 comparisons, where n is the amount of elements that need to be sorted. The amount of comparisons decreases each time, and, if you draw it out (like the diagram below), you will found that n<sup>2</sup>/2 comparisons need to be made.
+The first time, the code needs to make n - 1 comparisons, where n is the amount of elements that need to be sorted. The amount of comparisons decreases each time, and, if you draw it out (like the diagram below), you will found that n<sup>2</sup>/2 comparisons need to be made.    
 .    
-. .    
-. . .    
-. . . .    
-. . . . .    
+.  .    
+.  .  .    
+.  .  .  .    
+.  .  .  .  .    
 Diagram if n = 6
 Since 2 is a constant value, we can say that the time complexity of bubble sort is n<sup>2</sup>.
