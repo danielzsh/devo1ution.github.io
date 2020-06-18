@@ -1,2 +1,2 @@
-# This is my Github Pages project repo.
+# Home Page
 ## [Sorting](https://dantheking-crypto.github.io/sorting)
