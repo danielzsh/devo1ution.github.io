@@ -9,23 +9,23 @@ nav ul, footer ul {
     font-weight: bold;
 }
 a:link {
-    text-decoration: none;
+    text-decoration: none!important;
 }
 a:hover {
-    text-decoration: underline;
+    text-decoration: underline!important;
 }
 nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
 }
 nav ul li a:link {
-  text-decoration: none;
+  text-decoration: none!important;
   color: #999;
   padding: 10px 25px;
   text-align: center;
 }
 nav ul li a:hover {
-    text-decoration: none;
+    text-decoration: none!important;
     background-color: #c4c1c0;
 }
 
