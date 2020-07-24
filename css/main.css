@@ -18,7 +18,7 @@ nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
 }
-nav ul li a:link {
+nav ul li a:link, nav ul li a:active {
   text-decoration: none!important;
   color: #999;
   padding: 10px 25px;
