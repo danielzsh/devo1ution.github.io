@@ -28,7 +28,9 @@ nav ul li a:hover {
     text-decoration: none!important;
     background-color: #c4c1c0;
 }
-
+nav ul li a:visited {
+    text-decoration: none!important;
+}
 h1 {
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
