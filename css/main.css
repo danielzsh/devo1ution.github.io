@@ -31,6 +31,9 @@ nav ul li a:hover {
 nav ul li a:visited {
     text-decoration: none!important;
 }
+a {
+    color: blue;
+}
 h1 {
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
