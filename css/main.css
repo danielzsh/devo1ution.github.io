@@ -8,19 +8,24 @@ nav ul, footer ul {
     list-style: none;
     font-weight: bold;
 }
+a:hover {
+    text-decoration: underline;
+}
 nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
 }
-a {
+nav ul li a:link {
   text-decoration: none;
   color: #999;
   padding: 10px 25px;
   text-align: center;
 }
-a:hover {
+nav ul li a:hover {
+    text-decoration: none;
     background-color: #c4c1c0;
 }
+
 h1 {
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
