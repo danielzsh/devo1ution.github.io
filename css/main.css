@@ -9,27 +9,27 @@ nav ul, footer ul {
     font-weight: bold;
 }
 a:link {
-    text-decoration: none!important;
+    text-decoration: none;
 }
 a:hover {
-    text-decoration: underline!important;
+    text-decoration: underline;
 }
 nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
 }
 nav ul li a:link, nav ul li a:active {
-  text-decoration: none!important;
+  text-decoration: none;
   color: #999;
   padding: 10px 25px;
   text-align: center;
 }
 nav ul li a:hover {
-    text-decoration: none!important;
+    text-decoration: none;
     background-color: #c4c1c0;
 }
 nav ul li a:visited {
-    text-decoration: none!important;
+    text-decoration: none;
 }
 a {
     color: blue;
