@@ -20,7 +20,6 @@ nav ul li, footer ul li {
 }
 nav ul li a:link, nav ul li a:active {
   text-decoration: none;
-  color: #999;
   padding: 10px 25px;
   text-align: center;
 }
