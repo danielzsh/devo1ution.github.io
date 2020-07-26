@@ -23,7 +23,7 @@ nav ul li a {
   padding: 10px 25px;
   text-align: center;
   border-radius: 10px;
-  transition: width 2s, height 2s, transform 2s, padding 2s, background-color 2s;
+  transition: width 2s, height 2s, transform 2s, padding 1s, background-color 2s;
   background-color: #e3e3e3;
 }
 nav ul li a:hover {
