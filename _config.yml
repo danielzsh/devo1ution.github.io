@@ -1,0 +1,6 @@
+theme: jekyll-theme-leap-day
+title: Welcome to the official GitHub Pages site of dantheking-crypto!
+description: You can learn about many things here!
+name: Hank Quinlan, Horrible Cop
+markdown: kramdown
+permalink: /blog/:year/:month/:day/:title
