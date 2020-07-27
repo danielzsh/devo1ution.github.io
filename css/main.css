@@ -49,6 +49,9 @@ h1 {
     font-size: 3em;
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
+h2 {
+    margin-block-start: 3em;
+}
 nav ul h1 {
     float: left;
     margin-block-start: 0em;
