@@ -26,13 +26,18 @@ nav ul li a {
   padding: 10px 25px;
   text-align: center;
   border-radius: 10px;
-  transition: width 2s, height 2s, transform 2s, padding 1s, background-color 2s;
+  transition: all 2s ease;
   background-color: #e3e3e3;
+  background: linear-gradient(to right, #e3e3e3 34%, grey 65%);
+  background-size: 300% 100%;
+  background-position: left bottom;
 }
 nav ul li a:hover {
     text-decoration: none;
     background-color: #c4c1c0;
    	padding: 10px 40px;
+    background-position: right bottom;
+    color: lightblue;
 }
 nav ul li a:visited {
     text-decoration: none;
