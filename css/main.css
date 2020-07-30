@@ -3,7 +3,7 @@ body {
     width: 70%;
 }
 nav {
-    margin: 50px 0px;
+    margin: 20px 0px;
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
@@ -50,7 +50,7 @@ h1 {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 h2 {
-    margin-block-start: 3em;
+    margin-block-start: 0em;
 }
 nav ul h1 {
     float: left;
