@@ -58,9 +58,11 @@ nav ul h1 {
     margin-block-end: 0em;
     border-style: dotted;
     margin-right: 30px;
-    background: linear-gradient(to right, grey, transparent);
+    background: linear-gradient(to right, grey, white);
     border-radius: 10px;
     padding: 5px;
+    font-family: verdana;
+    font-weight: 100;
 }
 p {
     font-size: 1.5em;
