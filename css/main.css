@@ -2,9 +2,6 @@ body {
     margin: 60px auto;
     width: 70%;
 }
-nav {
-    margin: 20px 0px;
-}
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
@@ -72,6 +69,7 @@ p {
 nav {
     border-bottom: 1px solid #d5d5d5;
     padding: 10px 0px 50px 0px;
+    margin: 20px 0px;
 }
 footer {
     border-top: 1px solid #d5d5d5;
