@@ -32,7 +32,6 @@ nav ul li a {
 nav ul li a:hover {
     text-decoration: none;
     background-color: #c4c1c0;
-   	padding: 10px 40px;
     background-position: right bottom;
     color: lightblue;
 }
