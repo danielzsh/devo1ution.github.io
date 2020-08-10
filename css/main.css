@@ -23,7 +23,7 @@ nav ul li a {
   padding: 10px 25px;
   text-align: center;
   border-radius: 10px;
-  transition: background-position 2s ease;
+  transition: background-position 2s ease, color 2s ease;
   background-color: #e3e3e3;
   background: linear-gradient(to right, #e3e3e3 34%, grey 65%);
   background-size: 300% 100%;
