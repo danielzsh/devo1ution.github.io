@@ -7,7 +7,7 @@ image: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUTExIWFh
 <h2>{{ page.title }}</h2>
 <ul>
 
-  { % for game in site.game-collection % }
+  {% for game in site.game-collection %}
     <li><a href="{{ game.url }}">{{ post.title }}</a></li>
-  { % endfor }
+  {% endfor %}
  </ul>
