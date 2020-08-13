@@ -1,6 +1,8 @@
-theme: jekyll-theme-leap-day
 title: Welcome to the official GitHub Pages site of dantheking-crypto!
 description: You can learn about many things here!
 name: Daniel Zhu, 11
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
+collections:
+    game-collection:
+        output: true
