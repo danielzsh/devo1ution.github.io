@@ -79,11 +79,11 @@ footer {
     font-size: .8em;
 }
 
-ul.container {
+div.container ul {
     margin: 20px auto 40px; 
     font-size: 1.5em;
 }
 
-ul.container li {
+div.container ul li {
     list-style: none;
 }
