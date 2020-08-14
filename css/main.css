@@ -78,12 +78,11 @@ footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
 }
-
-div.container ul {
+ul.container {
     margin: 20px auto 40px; 
     font-size: 1.5em;
 }
 
-div.container ul li {
+ul.container li {
     list-style: none;
 }
