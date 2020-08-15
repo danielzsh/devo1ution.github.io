@@ -73,6 +73,7 @@ nav {
     margin: 20px 0px;
     background-image: url('../images/background.jpeg');
     background-size: 100% 100%;
+    border-radius: 10px;
 }
 footer {
     border-top: 1px solid #d5d5d5;
