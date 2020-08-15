@@ -61,6 +61,7 @@ nav ul h1 {
     font-weight: 100;
     color: white;
     border-color: black;
+    margin-left: 10px;
 }
 p {
     font-size: 1.5em;
