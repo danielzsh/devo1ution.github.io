@@ -68,6 +68,9 @@ p {
     line-height: 1.4em;
     color: #333;
 }
+nav:hover {
+    background-size: 110% 110%;
+}
 nav {
     border-bottom: 1px solid #d5d5d5;
     padding: 10px 0px 50px 0px;
@@ -75,6 +78,7 @@ nav {
     background-image: url('../images/background.jpeg');
     background-size: 100% 100%;
     border-radius: 10px;
+    transition: background-size 2s ease;
 }
 footer {
     border-top: 1px solid #d5d5d5;
