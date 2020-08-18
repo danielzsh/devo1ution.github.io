@@ -5,3 +5,4 @@ image: data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAARIAAAC4CAMAAAAYGZMtAAABWVB
 title: Terminal Hacker
 ---
 <iframe src="https://i.simmer.io/@dantheking/terminal-hacker" style="width:960px;height:600px"></iframe>
+<iframe src="https://itch.io/embed/676688" height="167" width="552" frameborder="0"><a href="https://dantheking.itch.io/terminal-hacker">Terminal Hacker by dantheking</a></iframe>
