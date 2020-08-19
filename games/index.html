@@ -9,6 +9,6 @@ image: data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBxMTEhUTExIWFh
 
   {% for game in site.game-collection %}
     <li><a href="{{ game.url }}">{{ game.title }}</a></li>
-    <img src="{{ page.image }}">
+    <img src="{{ game.image }}">
   {% endfor %}
  </ul>
