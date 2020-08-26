@@ -84,6 +84,8 @@ nav {
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
+    position: relative;
+    top: 100px;
 }
 div.container ul {
     margin: 20px auto 40px; 
