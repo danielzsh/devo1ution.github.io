@@ -9,7 +9,7 @@ Today, I found out how to keep track of which tab on your site is current select
 ![My nav bar](/images/nav.png)<br>
 <span class="caption">My tabs</span><br>
 As you probably know, on this website, if you select a tab, it will stand out from the others.<br>
-![One tab is selected](/images/nav.png)<br>
+![One tab is selected](/images/nav-selected.png)<br>
 <span class="caption">One tab is selected</span><br>
 While this may not be the best way, a simple use of Javscript's for loops can do the trick.<br>
 # The Idea
