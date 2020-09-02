@@ -10,18 +10,26 @@
 
 			  gtag('config', 'UA-174244002-2');
 			</script>
-
 			<title>{{ page.title }}</title>
 			<!-- link to main stylesheet -->
 			<link rel="stylesheet" type="text/css" href="/css/main.css">
 		</head>
-		<body>
+		<body onload="checkSelected()">
+			<script>
+				function checkSelected() {
+					var buttons = ['/', '/blog/', '/games/'];
+					var x;
+					for (x of buttons) {
+						if (window.location.href == (window.location.origin + x)) document.getElementById(x).classList.add("current");
+					}
+				}
+			</script>
 			<nav>
 	    		<ul>
 				<h1 style="background-image: url({{ page.image }}); background-size: 100% 100%;">{{ page.section }}</h1>
-	        		<li><a href="/">Home</a></li>
-	        		<li><a href="/blog">Blog</a></li>
-				<li><a href="/games">Games</a></li>
+	        		<li><a href="/" id="/">Home</a></li>
+	        		<li><a href="/blog/" id="/blog/">Blog</a></li>
+				<li><a href="/games/" id="/games/">Games</a></li>
 	    		</ul>
 			</nav>
 			<div class="container">
