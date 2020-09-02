@@ -96,7 +96,11 @@ div.container ul li {
     list-style: none;
 }
 .current {
-    background: white;
+    background: white!important;
+    color: blue!important;
     position: relative;
     bottom: 5px;
+}
+.caption {
+    font-size: 15px;
 }
