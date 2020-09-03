@@ -6,3 +6,5 @@ permalink: /blog/:year/:month/:day/:title
 collections:
     game-collection:
         output: true
+plugins:
+    - jekyll-seo-tag
