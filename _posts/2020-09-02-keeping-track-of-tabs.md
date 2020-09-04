@@ -4,6 +4,7 @@ title: "Keeping Track of Tabs"
 date: 2020-09-02
 section: Blog
 image: "/images/html.png"
+tags: [html]
 ---
 Today, I found out how to keep track of which tab on your site is current selected!<br>
 ![My nav bar](/images/nav.png)<br>

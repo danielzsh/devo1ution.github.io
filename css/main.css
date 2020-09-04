@@ -18,7 +18,25 @@ nav ul li, footer ul li {
     display: inline;
     margin-right: 20px;
 }
-nav ul li a {
+.dropdown {
+    display: inline-block;
+    background: linear-gradient(to right, #e3e3e3 34%, grey 65%);
+    background-size: 300% 100%;
+    background-position: left bottom;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    margin-top: 10px;
+}
+.dropdown-content .button {
+    display: block;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.button {
   text-decoration: none;
   padding: 10px 25px;
   text-align: center;
@@ -29,10 +47,10 @@ nav ul li a {
   background-size: 300% 100%;
   background-position: left bottom;
 }
-nav ul li a:hover {
+.button:hover {
     text-decoration: none;
     background-color: #c4c1c0;
-    background-position: right bottom;
+    background-position: right bottom!important;
     color: lightblue;
 }
 nav ul li a:visited {

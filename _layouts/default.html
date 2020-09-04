@@ -14,23 +14,33 @@
 			<!-- link to main stylesheet -->
 			<link rel="stylesheet" type="text/css" href="/css/main.css">
 			<link rel="shortcut icon" type="image/png" href="/favicon.png">
+			<script src="https://kit.fontawesome.com/47667412ca.js" crossorigin="anonymous"></script>
 		</head>
-		<body onload="checkSelected()">
+		<body onload="checkSelectedOnLoad()">
 			<script>
-				function checkSelected() {
+				function checkSelectedOnLoad() {
 					var buttons = ['/', '/blog/', '/games/'];
 					var x;
 					for (x of buttons) {
-						if (window.location.href == (window.location.origin + x)) document.getElementById(x).classList.add("current");
+						if (window.location.href == (window.location.origin + x)) { 
+							document.getElementById(x).classList.add("current");
+						}
 					}
 				}
 			</script>
 			<nav>
 	    		<ul>
 				<h1 style="background-image: url({{ page.image }}); background-size: 100% 100%;">{{ page.section }}</h1>
-	        		<li><a href="/" id="/">Home</a></li>
-	        		<li><a href="/blog/" id="/blog/">Blog</a></li>
-				<li><a href="/games/" id="/games/">Games</a></li>
+	        		<li><a href="/" id="/" class="button">Home</a></li>
+	        		<li>
+						<span class="dropdown" id="/blog/">
+							<a href="/blog/" class="button" style="background: inherit; background-position: left bottom">Blog <i class="fa fa-caret-down"></i></a>
+							<div class="dropdown-content">
+							  <a href="/blog/tags.html" class="button">Tags</a>
+							</div>
+						  </span>
+					</li>
+				<li><a href="/games/" id="/games/" class="button">Games</a></li>
 	    		</ul>
 			</nav>
 			<div class="container">
