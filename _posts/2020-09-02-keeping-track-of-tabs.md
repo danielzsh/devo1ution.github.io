@@ -17,7 +17,7 @@ While this may not be the best way, a simple use of Javscript's for loops can do
 I thought a good way to tackle this problem would be to check the current page-url, then check which page was selected.
 # The Implementation
 Each tab at the top was given an id corresponding to its href/link attribute. So, the home button was given the "/" id, the blog button was given the "/blog/" id, etc. Next, I used a JavaScript script to cycle through all the buttons to see if the link matched.
-```
+```javascript
 function checkSelected() {
 	var buttons = ['/', '/blog/', '/games/'];
 	var x;
