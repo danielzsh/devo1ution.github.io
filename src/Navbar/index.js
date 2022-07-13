@@ -1,5 +1,5 @@
-import logo from './images/invert_santa.png';
-import './App.css';
+import logo from '../invert_santa.png';
+import './index.css';
 import React from 'react';
 import {Link} from "react-router-dom";
 function Navbar() {

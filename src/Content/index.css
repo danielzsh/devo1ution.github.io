@@ -1,0 +1,25 @@
+.titleCard {
+    margin: 20px;
+    min-height: 100vh;
+    border-radius: 50px;
+    padding-top: 5%;
+    background-size: cover;
+    padding-bottom: 5%;
+}
+.title {
+    text-align: center;
+    color: white;
+    font-size: 10rem;
+}
+p {
+    text-align: center;
+    color: white;
+    font-size: 2rem;
+}
+a {
+    transition: 1s;
+    display: inline-block;
+}
+a:hover {
+    transform: scale(1.1);
+}
