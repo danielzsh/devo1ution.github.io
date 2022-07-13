@@ -15,3 +15,6 @@
     color: lightgrey;
     transform: scale(1.1);
 }
+.navbar>.collapse {
+    margin-left: 20px;
+}
