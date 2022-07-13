@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './Home';
+import About from './About';
 import reportWebVitals from './reportWebVitals';
 import Navbar from './Navbar';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
@@ -13,6 +14,7 @@ root.render(
       <Navbar />
       <Routes>
         <Route path='/' element={<App/>}/>
+        <Route path='/about' element={<About/>}/>
       </Routes>
   </div>
   </BrowserRouter>
