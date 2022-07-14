@@ -3,13 +3,26 @@ import 'bootstrap/dist/css/bootstrap.css'
 import Layout from '../components/layout';
 import '../styles.css';
 import { useEffect } from "react";
-function MyApp({ Component, pageProps }) {
+import { motion } from "framer-motion";
+function MyApp({ Component, pageProps, router }) {
     useEffect(() => {
         import("bootstrap/dist/js/bootstrap");
     }, []);
-    return <Layout>
-        <Component {...pageProps} />
-    </Layout>
+    return <motion.div key={router.route} initial="pageInitial" animate="pageAnimate" variants={{
+        pageInitial: {
+            opacity: 0.8
+        },
+        pageAnimate: {
+            opacity: 1,
+            transition : {
+                duration: 1
+            }
+        },
+    }}>
+        <Layout>
+            <Component {...pageProps} />
+        </Layout>
+    </motion.div>
 }
 
 // Only uncomment this method if you have blocking data requirements for
