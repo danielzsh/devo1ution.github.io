@@ -21,7 +21,7 @@
     "build": "next build && next export",
     "start": "next start",
     "predeploy": "npm run build",
-    "deploy": "next build && touch out/.nojekyll && git add out/ -f && git commit -m \"Deploy\" && git subtree push --prefix out origin gh-pages -f"
+    "deploy": "next build && touch out/.nojekyll && git add out/ -f && git commit -m \"Deploy\" && git subtree push --prefix out origin gh-pages"
   },
   "eslintConfig": {
     "extends": [
