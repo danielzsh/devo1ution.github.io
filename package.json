@@ -20,7 +20,7 @@
     "dev": "next dev",
     "build": "next build && next export",
     "start": "next start",
-    "deploy": "next build && next export && touch out/.nojekyll && cd out && git init && git add . && git commit -m \"Deploy\" && git push origin gh-pages"
+    "deploy": "next build && next export && touch out/.nojekyll && cd out && git init && git add . && git commit -m \"Deploy\" && git push origin HEAD:gh-pages"
   },
   "eslintConfig": {
     "extends": [
