@@ -25,7 +25,9 @@ jobs:
         touch .nojekyll
         git init
         git add .
+        git commit -m "Deploy"
         git remote add origin https://${github_token}@github.com/${repository}
+        git fetch origin gh-pages
         git push origin HEAD:gh-pages -f
       env:
         user_name: 'github-actions[bot]'
