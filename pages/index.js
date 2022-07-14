@@ -1,10 +1,8 @@
-import './index.css';
-import React from 'react';
-import bg from './bg.jpeg';
-import Content from '../Content';
-function App() {
+import bg from '../public/homebg.jpeg'
+import Content from '../components/content'
+function Home() {
   return (
-    <div className="App">
+    <div className="page">
       <Content image={bg} title={'Welcome!'} content={<>
       <p>Check out some of my other projects:</p><br /> 
       <ul style={{listStyleType: "none"}}>
@@ -19,4 +17,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
