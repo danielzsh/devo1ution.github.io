@@ -4,11 +4,11 @@ import { motion } from 'framer-motion';
 function Home() {
   useEffect(() => { document.title = 'Home'; });
   let links = new Map([
-    ['Walmart Scratch', "https://satanic-santa.github.io/blocks"],
+    ['Walmart Scratch', "https://devo1ution.github.io/blocks"],
     ['If you think you\'re smart, this might change your opinion', "https://docs.google.com/document/d/1NVCuk1u35kJRM6FnS8U0PVK47bhrxgMXHlo0rp1HGmM/edit?usp=sharing"],
-    ['200 commits and still horrible', 'https://github.com/satanic-santa/spark/tree/master'],
-    ['Literally got an A for this', "https://satanic-santa.github.io/buttons/"],
-    ['Figuratively got an A for this', "https://satanic-santa.github.io/Dreamsexual/"]
+    ['200 commits and still horrible', 'https://github.com/devo1ution/spark/tree/master'],
+    ['Literally got an A for this', "https://devo1ution.github.io/buttons/"],
+    ['Figuratively got an A for this', "https://devo1ution.github.io/Dreamsexual/"]
   ])
   return (
     <div className="page">
