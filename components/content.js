@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 function Content(props) {
-    return <div className='titleCard' style={{ backgroundImage: `url(${props.image.src})`}}>
+    return <div className='titleCard' style={{ backgroundImage: `url(${props.image})`}}>
     <motion.div initial="hidden" animate="visible" variants={{
             hidden: {
                 scale: .8,

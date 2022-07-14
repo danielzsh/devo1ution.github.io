@@ -1,4 +1,3 @@
-import bg from '../public/homebg.jpeg'
 import Content from '../components/content'
 import { useEffect } from 'react';
 import { motion } from 'framer-motion';
@@ -13,29 +12,27 @@ function Home() {
   ])
   return (
     <div className="page">
-      <Content image={bg} title={'Welcome!'} content={<>
+      <Content image={'/homebg.jpeg'} title={'Welcome!'} content={<>
         <p>Check out some of my other projects:</p><br />
-        <ul style={{ listStyleType: "none" }}>
-          {
-            Array.from(links.entries()).map(([title, link], idx) => {
-              return <motion.div initial="hidden" animate="visible" variants={{
-                hidden: {
-                  scale: .8,
-                  opacity: 0
-                },
-                visible: {
-                  scale: 1,
-                  opacity: 1,
-                  transition: {
-                    delay: .3 * (idx + 2)
-                  }
+        {
+          Array.from(links.entries()).map(([title, link], idx) => {
+            return <motion.div key={idx} initial="hidden" animate="visible" variants={{
+              hidden: {
+                scale: .8,
+                opacity: 0
+              },
+              visible: {
+                scale: 1,
+                opacity: 1,
+                transition: {
+                  delay: .3 * (idx + 2)
                 }
-              }}>
-                <li key={idx}><a href={link} target="_blank">{title}</a></li>
-              </motion.div>
-            })
-          }
-        </ul>
+              }
+            }}>
+              <a href={link} target="_blank">{title}</a>
+            </motion.div>
+          })
+        }
       </>} />
     </div>
   );
