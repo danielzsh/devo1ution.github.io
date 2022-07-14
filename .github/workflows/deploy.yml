@@ -22,6 +22,7 @@ jobs:
         git config --global user.email $user_email
         git remote set-url origin https://${github_token}@github.com/${repository}
         CI='' npm run build
+        touch out/.nojekyll
         npx gh-pages -d out -u "github-actions-bot <support+actions@github.com>"
       env:
         user_name: 'github-actions[bot]'
