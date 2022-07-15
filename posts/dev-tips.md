@@ -1,7 +1,7 @@
 ---
 title: My Programming Tips
 date: 'July 14 2022'
-excerpt: 'Tips for a beginning developer'
+excerpt: 'Tips for a beginner developer'
 picture: 'programming.jpg'
 background: 'computer.jpg'
 ---

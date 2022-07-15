@@ -3,12 +3,14 @@ import path from 'path'
 import matter from 'gray-matter'
 import Content from '../../components/content'
 import {marked} from 'marked'
+import { useEffect } from 'react'
 export default function PostPage({ frontmatter: {title, date, background}, slug, content}) {
-  return (
-    <>
-        <Content image={`/${background}`} title={title} content={<div className="mx-5" style={{textAlign: 'left'}} dangerouslySetInnerHTML={{__html: marked(content)}}></div>} />
-    </>
-  )
+    useEffect(() => { document.title = title; });
+    return (
+        <>
+            <Content image={`/${background}`} title={title} content={<div className="mx-5" style={{textAlign: 'left'}} dangerouslySetInnerHTML={{__html: marked(content)}}></div>} />
+        </>
+    )
 }
 export async function getStaticPaths() {
     const files = fs.readdirSync(path.join('posts'))
