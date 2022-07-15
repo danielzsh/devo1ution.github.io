@@ -11,7 +11,7 @@ export default function Blog({ posts }) {
             <Content image={'blogbg.jpg'} title={'Blog'} content={
                 <div>
                     {posts.map((post, idx) => {
-                        return <PostCard key={idx} idx={idx} picture={`/${post.frontmatter.picture}`} title={post.frontmatter.title} excerpt={post.frontmatter.excerpt} date={post.frontmatter.date} />
+                        return <PostCard key={idx} idx={idx} picture={`/${post.frontmatter.picture}`} url={`./blog/${post.slug}`} title={post.frontmatter.title} excerpt={post.frontmatter.excerpt} date={post.frontmatter.date} />
                         
                     })}
                 </div>
