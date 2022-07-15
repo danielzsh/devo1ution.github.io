@@ -40,7 +40,9 @@ li {
   margin-right: 20px;
   font-size: 24px;
 }
-
+.active .nav-link {
+  color: darkgrey;
+}
 .nav-item:hover {
   color: lightgrey;
   transform: scale(1.1);
@@ -68,7 +70,9 @@ li {
   color: white;
   font-size: 10rem;
 }
-
+h1 {
+  font-size: 4rem;
+}
 p {
   color: white;
   font-size: 2rem;
@@ -78,13 +82,20 @@ a {
   transition: 1s;
   display: inline-block;
   font-size: 2rem;
+  color: white;
 }
 
 a:hover {
-  transform: scale(1.1);
+  transform: scale(1.05);
+  color: darkgray;
 }
 
 .titleCard:hover {
-  background-size: 105%;
-  border-radius: 100px;
+  background-size: 102%;
+}
+.card {
+  transition: 0.5s;
+}
+.card:hover {
+  transform: scale(1.05);
 }

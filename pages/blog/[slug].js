@@ -3,11 +3,10 @@ import path from 'path'
 import matter from 'gray-matter'
 import Content from '../../components/content'
 import {marked} from 'marked'
-export default function PostPage({ frontmatter: {title, date, picture}, slug, content}) {
-    console.log(picture);
+export default function PostPage({ frontmatter: {title, date, background}, slug, content}) {
   return (
     <>
-        <Content image={`${picture}`} title={title} content={<div dangerouslySetInnerHTML={{__html: marked(content)}}></div>} />
+        <Content image={`/${background}`} title={title} content={<div className="mx-5" style={{textAlign: 'left'}} dangerouslySetInnerHTML={{__html: marked(content)}}></div>} />
     </>
   )
 }
