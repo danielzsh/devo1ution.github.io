@@ -8,7 +8,7 @@ const useOnScreen = (ref) => {
        if (ref.current) {
            observer.observe(ref.current);
         }
-    }, [])
+    })
     return isIntersecting;
 }
 export default useOnScreen
