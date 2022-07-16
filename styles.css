@@ -63,7 +63,9 @@ li {
   background-size: 100%;
   text-align: center;
 }
-
+::-webkit-scrollbar {
+  display: none;
+}
 .title {
   color: white;
   font-size: 10rem;

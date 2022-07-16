@@ -9,7 +9,7 @@ export default function Blog({ posts }) {
     return (
         <div className="page">
             <Content image={'blogbg.jpg'} title={'Blog'} content={
-                <div>
+                <div style={{overflow: 'auto', overflowX: 'hidden', maxHeight: '100vh'}}>
                     {posts.map((post, idx) => {
                         return <PostCard key={idx} idx={idx} picture={`/${post.frontmatter.picture}`} url={`./blog/${post.slug}`} title={post.frontmatter.title} excerpt={post.frontmatter.excerpt} date={post.frontmatter.date} />
                         
