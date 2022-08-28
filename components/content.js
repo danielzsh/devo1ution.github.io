@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 function Content(props) {
     return <div className='titleCard' style={{ backgroundImage: `url(${props.image})`}}>
-    <motion.div initial="hidden" animate="visible" variants={{
+    <motion.div initial="hidden" animate="visible" style={{flex: '0 1 auto'}} variants={{
             hidden: {
                 scale: .8,
                 opacity: 0
@@ -15,7 +15,7 @@ function Content(props) {
     }}>
         <h1 className='title'>{props.title}</h1>
     </motion.div>
-    <motion.div initial="hidden" animate="visible" variants={{
+    <motion.div initial="hidden" animate="visible" style={{flex: '1 1 auto'}} variants={{
             hidden: {
                 scale: .8,
                 opacity: 0

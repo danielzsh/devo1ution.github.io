@@ -10,8 +10,13 @@ code {
     monospace;
 }
 .page {
-  height: 100vh;
+  height: 100%;
   color: white;
+  display: flex;
+  flex-flow: column;
+}
+html, body {
+  height: 100%;
 }
 .nav-link {
   color: white;
@@ -19,7 +24,6 @@ code {
   margin-right: 20px;
   font-size: 24px;
 }
-
 .nav-link:hover {
   color: lightgrey;
   transform: scale(1.1);
@@ -31,6 +35,7 @@ li {
   margin: 20px;
   border-radius: 20px;
   padding: 10px;
+  flex: 0 1 auto;
 }
 
 .nav-item {
@@ -53,15 +58,20 @@ li {
 }
 .titleCard {
   margin: 20px;
-  min-height: 100%;
   border-radius: 50px;
   padding-top: 5%;
-  background-size: cover;
+  background-size: 100%;
   background-position: center;
   padding-bottom: 5%;
   transition: ease-out 2s;
-  background-size: 100%;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 auto;
+  overflow-y: scroll;
+}
+.titleCard:hover {
+  background-size: 102%;
 }
 ::-webkit-scrollbar {
   display: none;
@@ -91,9 +101,6 @@ a:hover {
   color: darkgray;
 }
 
-.titleCard:hover {
-  background-size: 102%;
-}
 .card {
   transition: 0.5s;
 }

@@ -11,30 +11,28 @@ function Home() {
     ['Figuratively got an A for this', "https://devo1ution.github.io/Dreamsexual/"]
   ])
   return (
-    <div className="page">
-      <Content image={'/homebg.jpeg'} title={'Welcome!'} content={<>
-        <p>Check out some of my other projects:</p><br />
-        {
-          Array.from(links.entries()).map(([title, link], idx) => {
-            return <motion.div key={idx} initial="hidden" animate="visible" variants={{
-              hidden: {
-                scale: .8,
-                opacity: 0
-              },
-              visible: {
-                scale: 1,
-                opacity: 1,
-                transition: {
-                  delay: .3 * (idx + 2)
-                }
+    <Content image={'/homebg.jpeg'} title={'Welcome!'} content={<>
+      <p>Check out some of my other projects:</p><br />
+      {
+        Array.from(links.entries()).map(([title, link], idx) => {
+          return <motion.div key={idx} initial="hidden" animate="visible" variants={{
+            hidden: {
+              scale: .8,
+              opacity: 0
+            },
+            visible: {
+              scale: 1,
+              opacity: 1,
+              transition: {
+                delay: .3 * (idx + 2)
               }
-            }}>
-              <a href={link} target="_blank">{title}</a>
-            </motion.div>
-          })
-        }
-      </>} />
-    </div>
+            }
+          }}>
+            <a href={link} target="_blank">{title}</a>
+          </motion.div>
+        })
+      }
+    </>} />
   );
 }
 

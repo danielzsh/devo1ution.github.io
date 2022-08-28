@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps, router }) {
     useEffect(() => {
         import("bootstrap/dist/js/bootstrap");
     }, []);
-    return <motion.div key={router.route} initial="pageInitial" animate="pageAnimate" variants={{
+    return <motion.div key={router.route} style={{height: '100%'}} initial="pageInitial" animate="pageAnimate" variants={{
         pageInitial: {
             opacity: 0.8
         },
@@ -22,6 +22,13 @@ function MyApp({ Component, pageProps, router }) {
         <Layout>
             <Component {...pageProps} />
         </Layout>
+        <style jsx global>{`
+            /* Other global styles such as 'html, body' etc... */
+
+            #__next {
+            height: 100%;
+            }
+        `}</style>
     </motion.div>
 }
 
