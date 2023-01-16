@@ -107,3 +107,7 @@ a:hover {
 .card:hover {
   transform: scale(1.05);
 }
+
+pre code {
+  font-size: 2em;
+}
