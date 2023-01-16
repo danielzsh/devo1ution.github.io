@@ -11,7 +11,7 @@ function _content(props) {
             scale: 1,
             opacity: 1,
             transition: {
-                delay: .2
+                delay: .4 * (props.idx) + 1
             }
         }
     }}>
@@ -33,13 +33,13 @@ function _content(props) {
     </motion.div>
 }
 export default function PostCard(props) {
-    const ref = useRef();
-    const refValue = useOnScreen(ref);
-    const [isref, setref] = useState(false);
-    useEffect(() => {
-        setref(refValue);
-    }, [refValue]);
-    return <div ref={ref}>
-        {refValue && <_content {...props} />}
+    // const ref = useRef();
+    // const refValue = useOnScreen(ref);
+    // const [isref, setref] = useState(false);
+    // useEffect(() => {
+    //     if (!isref) setref(refValue);
+    // }, [refValue]);
+    return <div>
+        {<_content {...props} />}
     </div>
 }
